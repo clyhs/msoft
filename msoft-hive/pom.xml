@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.msoft</groupId>
+		<artifactId>msoft</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.msoft</groupId>
+	<artifactId>msoft-hive</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>msoft-hive</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-metastore</artifactId>
+			<version>${hive.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-service</artifactId>
+			<version>${hive.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.thrift</groupId>
+			<artifactId>libfb303</artifactId>
+			<version>0.9.0</version>
+		</dependency>
+		<!-- runtime Hive deps start -->
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-common</artifactId>
+			<version>${hive.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- <dependency> <groupId>org.apache.hive</groupId> <artifactId>hive-builtins</artifactId> 
+			<version>${hive.version}</version> <scope>runtime</scope> </dependency> -->
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-jdbc</artifactId>
+			<version>${hive.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-shims</artifactId>
+			<version>${hive.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-serde</artifactId>
+			<version>${hive.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-contrib</artifactId>
+			<version>${hive.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- runtime Hive deps end -->
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy</artifactId>
+			<version>1.8.5</version>
+			<scope>runtime</scope>
+		</dependency>
+
+	</dependencies>
+</project>
